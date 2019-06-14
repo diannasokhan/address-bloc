@@ -50,8 +50,11 @@ module.exports = class MenuController {
         process.exit();
     }
     getDate(){
-        let date = new Date()
-        let newDate = 'Today is '+ date.toDateString() + ' and the time is ' + date.toLocaleTimeString()
-        console.log(newDate)
+        let date = new Date();
+        let newDate = 'Today is '+ date.toDateString() + ' and the time is ' + date.toLocaleTimeString();
+        console.log(newDate);
         }
+    getContactCount(){
+        return this.contacts.length;
+    }
 }
