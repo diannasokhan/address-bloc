@@ -1,4 +1,5 @@
 'use strict';
+
 module.exports = (sequelize, DataTypes) => {
   var Contact = sequelize.define('Contact', {
     name: DataTypes.STRING,
